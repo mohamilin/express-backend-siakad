@@ -25,6 +25,6 @@ app.use('/', indexRouter);
 // versi lain call route
 require('./routes/apiRoute')(app);
 require('./routes/authRoute')(app)
-require('./routes/userRoute')
+require('./routes/userRoute')(app)
 
 module.exports = app;
